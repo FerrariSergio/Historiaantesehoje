@@ -6,22 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <a href="Historiaantesehoje.html">Voltar</a>
-</head>
-<body>
-    <h1>Cadastros de Historiadores</h1>
-    <form action="Historiaantesehoje.html" method="post">
 
+    <style>
+        section {
+
+            border: solid 2px black;
+
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <section>
+
+    <h1>Cadastros de Historiadores</h1>
+
+    </section>
+
+    <section>
+
+
+    <form action="Historiaantesehoje.html" method="post"><br>
+        
         <label>Nome</label>
-        <input type="text" name="nome" class="nome" id=""/><br>
+        <input placeholder="Insira seu nome" type="text" name="nome" class="nome" id=""/><br>
 
         <label>Sobrenome</label>
-        <input type="text"name="sobrenome" class="sobrenome" id="" /><br>
+        <input placeholder="Insira seu sobrenome" type="text"name="sobrenome" class="sobrenome" id="" /><br>
+
+        <label>Data de nascimento</label>
+        <input type="date" name="data" id=""><br>
 
         <label>Email</label>
-        <input type="email" name="email" class="email" id=""/><br>
+        <input placeholder="Insira seu email" type="email" name="email" class="email" id=""/><br>
 
         <label>Senha</label>
-        <input type="password" name="senha" class="senha" id=""/><br>
+        <input placeholder="Insira sua senha" type="password" name="senha" class="senha" id=""/><br>
 
         <label>Opções</label>
         <input type="radio" name="opções1" class="opções" id=""/>A
@@ -36,21 +61,62 @@
         <input type="checkbox" name="checkbox3" class="checkbox3" id=""/>Guerras<br>
         <input type="checkbox" name="checkbox3" class="checkbox3" id=""/>Tecnologias<br>
 
+        <label>Sexo</label><br>
+        <select name="sexo" id="">
+            <option value="">Selecione</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select><br>
+
+
         <label>Genero</label><br>
         <input type="checkbox" name="Masculino" class="Masculino" id=""/>Masculino<br>
         <input type="checkbox" name="feminino" class="feminino" id=""/>feminino<br>
-        <input type="checkbox" name="outros" class="outros" id=""/>outros<br>
+        <input type="checkbox" name="outros" class="outros" id=""/>outros<br><br>
+
+        <label>Escolha o mundo que queira viajar !</label><br>
+        <input type="text" placeholder="Viaje no mundo da Historia"  name="Escolha" list="Viaje"><br><br>
+        <datalist id="Viaje">
+            <option value="Astronomia">
+                <option value="Historia do Brasil">
+                    <option value="Tecnologia">
+                        <option value="Guerras">
+           
+
+
+        </datalist><br>
+
+
+        <label>Historia do Mundo</label><br>
+        <select name="Historia" id="">
+            <optgroup label="Historia">
+                <option value="Passado">Passado</option>
+                <option value="Presente">Presente</option>
+                <option value="Futuro">Futuro</option>
+            </optgroup>
+
+            <optgroup label="Tecnologia">
+                    <option value="Passado">Passado</option>
+                    <option value="Presente">Presente</option>
+                    <option value="Futuro">Futuro</option>
+            </optgroup>
+
+        </select><br><br>
 
         <label>Conte-nos o porque escolheu nosso site</label><br>
-        <textarea name="textarea" class="textarea" id="" cols="50" rows="5"></textarea>
+        <textarea name="textarea" class="textarea" id="" cols="50" rows="5"></textarea><br>
 
 
         <label>Arquivo</label>
-        <input type="file" name="arquivo"/>
+        <input type="file" name="arquivo"/><br><br><br>
 
-
+        <input type="submit" value="Enviar">
+        
 
 
     </form>
+
+    </section>
+
 </body>
 </html>
